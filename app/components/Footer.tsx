@@ -26,9 +26,9 @@ const footerLinks = {
     { name: 'Privacy Policy', href: '#' }
   ],
   contact: [
-    { icon: <FiPhone />, text: '+1 (555) 123-4567' },
+    { icon: <FiPhone />, text: '+91 8717986200' },
     { icon: <FiMail />, text: 'support@getinstantfresh.com' },
-    { icon: <FiMapPin />, text: '123 Business Avenue, Suite 100, City, State 12345' }
+    { icon: <FiMapPin />, text: 'Ward No. 13 , Near Jai Bhawani Colony , Railway Station Road Khitola,Sihora-483225 ' }
   ],
   social: [
     { icon: <FiFacebook />, name: 'Facebook', href: '#' },

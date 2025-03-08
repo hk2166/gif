@@ -27,8 +27,10 @@ const Navbar: React.FC<NavbarProps> = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-8">
             <Link href="/" className="text-xl font-bold text-primary">
-              Get Instant Fresh
+              Get Instant Fresh        
             </Link>
+            
+    
             
             {/* Location Selector */}
             <div className="hidden md:flex items-center space-x-2 text-gray-700 cursor-pointer hover:text-primary">

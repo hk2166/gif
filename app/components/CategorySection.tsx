@@ -6,22 +6,22 @@ import Image from 'next/image';
 
 const categories = [
   {
-    title: "Fresh Produce",
+    title: "Fruits & Vegetables",
     description: "Farm-fresh vegetables, fruits, and herbs",
     image: "/images/categories/fresh-produce.jpg",
     items: ["Vegetables", "Fruits", "Herbs", "Microgreens"]
   },
   {
-    title: "Meat & Seafood",
-    description: "Premium quality meats and fresh seafood",
+    title: "Masala,Salt & Sugar",
+    description: "Premium quality Masale",
     image: "/images/categories/meat-seafood.jpg",
-    items: ["Chicken", "Mutton", "Fish", "Seafood"]
+    items: ["Chilli,Turmeric,Coriender Powder", "Grounded Spices", "Whole Spices", "Salt & Sugar","Mouth Freshner & Papad"]
   },
   {
-    title: "Dairy & Eggs",
-    description: "Fresh dairy products and farm eggs",
+    title: "Dairy",
+    description: "Fresh dairy products ",
     image: "/images/categories/dairy.jpg",
-    items: ["Milk", "Cheese", "Butter", "Eggs"]
+    items: ["Milk & Milk Powder", "Cheese", "Butter", "Cream","Ghee","Curd","Paneer","Khoya"]
   },
   {
     title: "Packaging",
@@ -40,7 +40,73 @@ const categories = [
     description: "Restaurant-grade cleaning products",
     image: "/images/categories/cleaning.jpg",
     items: ["Detergents", "Sanitizers", "Equipment", "Tools"]
-  }
+  },
+  {
+    title: "Sauces & Seasoning",
+    description: "Premium quality Sauces",
+    image: "/images/categories/meat-seafood.jpg",
+    items: ["Mayonnaise,Dips & Dressing","Ketchup,Puree & Paste","Vineger,Soya & Chilli Sauces","MSG,Flavors & Essence","Oregeno,Chilli Flakes &Seasoning","Instant Noodles","Chutney & Pickles"]
+  },
+  {
+    title: "Canned & Imported Items",
+    description: "Grade-A canned and imported goods",
+    image: "/images/categories/cleaning.jpg",
+    items: ["Olives,Jallepinos","Pasta & Noodles","Italian & European","Coconut Milk Powder & Cream","Imported Bakery & Chesse"]
+  },
+  {
+    title: "Edible Oils",
+    description: "Best quality Edible Oils",
+    image: "/images/categories/cleaning.jpg",
+    items: ["Sunflower Oil","Soyabean Oil","Mustard Oil","Vanaspati","Palm Oil","Cottonseed Oil"]
+  },
+  {
+    title: "Frozen & Instant Food",
+    description: "Grade - A Frozen & Instant Food",
+    image: "/images/categories/cleaning.jpg",
+    items: ["Fries","Burger Patty","Instant Mix","Cake & Brownies",""]
+  },
+  {
+    title: "Pulses",
+    description: "Grade - A Pulses",
+    image: "/images/categories/cleaning.jpg",
+    items: ["Dal","Rajma & Kabuli","Millets & Seeds"]
+  },
+  {
+    title: "Bakery & Chocalates",
+    description: "Best Bakery & Chocalates",
+    image: "/images/categories/cleaning.jpg",
+    items: ["Honey,Spreads & Snacks","Chocalates & Compounds","Cake toppings & Decorations","Essence & Food color","Cake Premix","Bakery Ingredients","Bread & Buns"]
+  },
+  {
+    title: "Beverages & Mixers",
+    description: "All in One",
+    image: "/images/categories/cleaning.jpg",
+    items: ["Juices & Bar Mix","Cold Drinks","Tea & Coffee","Syrups & Crushers","Energy & Flavoured Drinks"]
+  },
+  {
+    title: "Flour",
+    description: "Grade - A Flour",
+    image: "/images/categories/cleaning.jpg",
+    items: ["Atta,Maida & Sooji","Corn Flour & Besan & Others"]
+  },
+  {
+    title: "Rice & Rice Products",
+    description: "Grade - A Rice & Rice Products",  
+    image: "/images/categories/cleaning.jpg",
+    items: ["Basmati & Biryani Rice","Poha,Idli & Others","Staff Rice","Sona Masori & Kolam Rice","Indrayani Rice","Thali,Table Rice"]
+  },
+  {
+    title: "Dry Fruits & Nuts",
+    description: "Grade - A Dry Fruits & Nuts",
+    image: "/images/categories/cleaning.jpg",
+    items: ["Cashews","Peanuts & Others","Almonds,Risens & Pista","Magaj"]
+  },
+  {
+    title: "Frozen & Instant Food",
+    description: "Grade - A Frozen & Instant Food",
+    image: "/images/categories/cleaning.jpg",
+    items: ["Fries","Burger Patty","Instant Mix","Cake & Brownies",""]
+  },
 ];
 
 export default function CategorySection() {
