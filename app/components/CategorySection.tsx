@@ -111,7 +111,7 @@ const categories = [
 
 export default function CategorySection() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white dark:bg-gray-900">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -120,8 +120,8 @@ export default function CategorySection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4">Our Categories</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">Our Categories</h2>
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Explore our wide range of high-quality products and supplies for your restaurant
           </p>
         </motion.div>
@@ -134,11 +134,11 @@ export default function CategorySection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100"
+              className="group bg-white dark:bg-gray-800 rounded-2xl shadow-lg dark:shadow-gray-800/50 overflow-hidden border border-gray-100 dark:border-gray-700"
             >
-              <div className="aspect-w-16 aspect-h-9 relative bg-gray-100">
+              <div className="aspect-w-16 aspect-h-9 relative bg-gray-100 dark:bg-gray-700">
                 <div className="w-full h-48 relative">
-                  <div className="absolute inset-0 bg-gray-200 animate-pulse" />
+                  <div className="absolute inset-0 bg-gray-200 dark:bg-gray-600 animate-pulse" />
                   {/* Placeholder for actual images */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                   <div className="absolute bottom-4 left-4 text-white">
@@ -148,18 +148,18 @@ export default function CategorySection() {
               </div>
               
               <div className="p-6">
-                <p className="text-gray-600 mb-4">{category.description}</p>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">{category.description}</p>
                 <div className="space-y-2 mb-6">
                   {category.items.map((item, idx) => (
-                    <div key={idx} className="flex items-center text-gray-700">
-                      <span className="w-2 h-2 bg-primary/60 rounded-full mr-2"></span>
+                    <div key={idx} className="flex items-center text-gray-700 dark:text-gray-300">
+                      <span className="w-2 h-2 bg-primary-600 dark:bg-primary-400 rounded-full mr-2"></span>
                       {item}
                     </div>
                   ))}
                 </div>
                 <motion.button
                   whileHover={{ x: 5 }}
-                  className="flex items-center text-primary font-semibold group-hover:text-primary/80"
+                  className="flex items-center text-primary-600 dark:text-primary-400 font-semibold group-hover:text-primary-700 dark:group-hover:text-primary-300"
                 >
                   Explore Category
                   <FiArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
