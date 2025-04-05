@@ -91,7 +91,7 @@ export default function FAQSection() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+    <section className="py-20 bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
       <div className="container-custom">
         <motion.div
           initial="hidden"
@@ -100,8 +100,8 @@ export default function FAQSection() {
           variants={titleVariants}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4">Frequently Asked Questions</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">Frequently Asked Questions</h2>
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Find answers to common questions about our services and operations
           </p>
         </motion.div>
@@ -123,7 +123,7 @@ export default function FAQSection() {
             >
               <motion.button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full flex items-center justify-between p-6 bg-white rounded-xl border border-gray-100 transition-all"
+                className="w-full flex items-center justify-between p-6 bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 transition-all"
                 whileHover={{ 
                   scale: 1.02,
                   boxShadow: "0 4px 20px rgba(0,0,0,0.1)",
@@ -131,9 +131,9 @@ export default function FAQSection() {
                 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <span className="text-lg font-semibold text-left">{faq.question}</span>
+                <span className="text-lg font-semibold text-left text-gray-900 dark:text-black">{faq.question}</span>
                 <motion.span
-                  className="text-primary ml-4"
+                  className="text-primary-600 dark:text-primary-400 ml-4"
                   animate={{ rotate: openIndex === index ? 180 : 0 }}
                   transition={{ duration: 0.3 }}
                 >
@@ -155,12 +155,12 @@ export default function FAQSection() {
                     className="overflow-hidden"
                   >
                     <motion.div 
-                      className="p-6 bg-white border border-gray-100 rounded-xl mt-2"
+                      className="p-6 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-xl mt-2"
                       initial={{ opacity: 0, y: -20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.1 }}
                     >
-                      <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{faq.answer}</p>
                     </motion.div>
                   </motion.div>
                 )}
@@ -182,7 +182,7 @@ export default function FAQSection() {
               boxShadow: "0 4px 20px rgba(0,0,0,0.1)"
             }}
             whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center space-x-2 bg-primary text-white px-8 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors"
+            className="inline-flex items-center space-x-2 bg-primary-600 dark:bg-primary-500 text-white px-8 py-3 rounded-xl font-semibold hover:bg-primary-700 dark:hover:bg-primary-600 transition-colors"
           >
             <span>Contact our support team</span>
           </motion.button>

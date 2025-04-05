@@ -8,19 +8,23 @@ import DeliveryModelsSection from './components/DeliveryModelsSection';
 import SustainabilitySection from './components/SustainabilitySection';
 import FAQSection from './components/FAQSection';
 import Footer from './components/Footer';
+import ThemeToggle from './components/ThemeToggle';
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <Navbar />
-      <HeroSection />
-      <FeaturesSection />
-      <CategorySection />
-      <QualitySection />
-      <DeliveryModelsSection />
-      <SustainabilitySection />
-      <FAQSection />
-      <Footer />
+    <main className="min-h-screen bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <Navbar />
+        <HeroSection />
+        <FeaturesSection />
+        <CategorySection />
+        <QualitySection />
+        <DeliveryModelsSection />
+        <SustainabilitySection />
+        <FAQSection />
+        <Footer />
+      </div>
+      <ThemeToggle />
     </main>
   );
 } 

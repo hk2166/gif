@@ -24,7 +24,7 @@ const qualityFeatures = [
 
 export default function QualitySection() {
   return (
-    <section id="quality" className="py-20 bg-gray-50 overflow-hidden">
+    <section id="quality" className="py-20 bg-gray-50 dark:bg-gray-900 overflow-hidden">
       <div className="container-custom">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -33,8 +33,8 @@ export default function QualitySection() {
           transition={{ duration: 0.6 }}
           className="max-w-3xl mx-auto text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-6">Our Quality Promise</h2>
-          <p className="text-xl text-gray-600">
+          <h2 className="text-4xl font-bold mb-6 text-gray-900 dark:text-white">Our Quality Promise</h2>
+          <p className="text-xl text-gray-600 dark:text-gray-300">
             We maintain the highest standards of quality in our supply chain, ensuring that your restaurant receives only the best ingredients and supplies.
           </p>
         </motion.div>
@@ -61,13 +61,13 @@ export default function QualitySection() {
                     damping: 20,
                     delay: 0.2 + index * 0.1 
                   }}
-                  className="flex-shrink-0 w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center"
+                  className="flex-shrink-0 w-8 h-8 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center"
                 >
-                  <FiCheck className="w-5 h-5 text-primary" />
+                  <FiCheck className="w-5 h-5 text-primary-600 dark:text-primary-400" />
                 </motion.div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                  <p className="text-gray-600">{feature.description}</p>
+                  <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">{feature.title}</h3>
+                  <p className="text-gray-600 dark:text-gray-300">{feature.description}</p>
                 </div>
               </motion.div>
             ))}
@@ -79,9 +79,9 @@ export default function QualitySection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative h-[400px] bg-white rounded-lg shadow-lg overflow-hidden"
+            className="relative h-[400px] bg-white dark:bg-gray-800 rounded-lg shadow-lg dark:shadow-gray-800/50 overflow-hidden"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-primary/10" />
+            <div className="absolute inset-0 bg-gradient-to-r from-primary-100 dark:from-primary-900 to-primary-200 dark:to-primary-800" />
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center p-8">
                 <motion.div
@@ -94,16 +94,16 @@ export default function QualitySection() {
                     damping: 20,
                     delay: 0.3
                   }}
-                  className="w-24 h-24 mx-auto mb-6 bg-primary/10 rounded-full flex items-center justify-center"
+                  className="w-24 h-24 mx-auto mb-6 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center"
                 >
-                  <FiShield className="w-12 h-12 text-primary" />
+                  <FiShield className="w-12 h-12 text-primary-600 dark:text-primary-400" />
                 </motion.div>
                 <motion.h4
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.5 }}
-                  className="text-2xl font-bold mb-4"
+                  className="text-2xl font-bold mb-4 text-gray-900 dark:text-white"
                 >
                   Quality Certified
                 </motion.h4>
@@ -112,7 +112,7 @@ export default function QualitySection() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.6 }}
-                  className="text-gray-600"
+                  className="text-gray-600 dark:text-gray-300"
                 >
                   Our quality management system is certified by international standards, ensuring consistent quality in every delivery.
                 </motion.p>
