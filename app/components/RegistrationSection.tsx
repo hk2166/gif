@@ -4,26 +4,26 @@ import { motion } from 'framer-motion';
 import { FiUser, FiShoppingBag, FiTruck, FiBox, FiBarChart, FiCreditCard, FiSearch, FiHeart, FiArrowLeft } from 'react-icons/fi';
 import Link from 'next/link';
 
-const sellerBenefits = [
+const homeDelivery = [
   {
     icon: <FiTruck className="w-5 h-5" />,
-    text: "Reach more restaurants and expand your business"
+    text: "Fresh food, quick doorstep delivery"
   },
   {
     icon: <FiBarChart className="w-5 h-5" />,
-    text: "Access detailed analytics and insights"
+    text: "Shop fast, skip the long lines"
   },
   {
     icon: <FiBox className="w-5 h-5" />,
-    text: "Efficient inventory management system"
+    text: "Big savings with daily offers"
   },
   {
     icon: <FiCreditCard className="w-5 h-5" />,
-    text: "Secure and timely payments"
+    text: "Quality groceries you can trust"
   }
 ];
 
-const customerBenefits = [
+const resturentDelivery = [
   {
     icon: <FiSearch className="w-5 h-5" />,
     text: "Access to quality verified suppliers"
@@ -88,12 +88,12 @@ export default function RegistrationSection() {
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
                 <FiShoppingBag className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Register as a Seller</h3>
+              <h3 className="text-2xl font-bold mb-4">Login For Home Delivery</h3>
               <p className="text-gray-600 mb-6">
-                Join our network of trusted suppliers and reach thousands of restaurants looking for quality products.
+                Join our network of trusted products and regionable rates thousands of Coustumers looking for quality products.
               </p>
               <div className="space-y-4 mb-8">
-                {sellerBenefits.map((benefit, index) => (
+                {homeDelivery.map((benefit, index) => (
                   <motion.div
                     key={index}
                     initial={{ opacity: 0, x: -20 }}
@@ -111,7 +111,7 @@ export default function RegistrationSection() {
                 whileTap={{ scale: 0.95 }}
                 className="btn-primary w-full"
               >
-                Start Selling
+                Create Account
               </motion.button>
             </div>
           </motion.div>
@@ -128,12 +128,12 @@ export default function RegistrationSection() {
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
                 <FiUser className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Register as a Customer</h3>
+              <h3 className="text-2xl font-bold mb-4">Login For Resturent Delivery</h3>
               <p className="text-gray-600 mb-6">
                 Get access to high-quality ingredients and supplies for your restaurant at competitive prices.
               </p>
               <div className="space-y-4 mb-8">
-                {customerBenefits.map((benefit, index) => (
+                {resturentDelivery.map((benefit, index) => (
                   <motion.div
                     key={index}
                     initial={{ opacity: 0, x: 20 }}

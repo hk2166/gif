@@ -33,7 +33,7 @@ const footerLinks = {
   social: [
     { icon: <FiFacebook />, name: 'Facebook', href: '#' },
     { icon: <FiTwitter />, name: 'Twitter', href: '#' },
-    { icon: <FiInstagram />, name: 'Instagram', href: '#' },
+    { icon: <FiInstagram />, name: 'Instagram', href: 'https://www.instagram.com/get_insta_fresh/' },
     { icon: <FiLinkedin />, name: 'LinkedIn', href: '#' }
   ],
   appStores: [

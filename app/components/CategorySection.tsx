@@ -8,7 +8,7 @@ const categories = [
   {
     title: "Fruits & Vegetables",
     description: "Farm-fresh vegetables, fruits, and herbs",
-    image: "/images/categories/fresh-produce.jpg",
+    image: "/fresh-produce.jpg",
     items: ["Vegetables", "Fruits", "Herbs", "Microgreens"]
   },
   {
