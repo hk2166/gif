@@ -104,7 +104,7 @@ const categories = [
   {
     title: "Frozen & Instant Food",
     description: "Grade - A Frozen & Instant Food",
-    image: "/images/categories/cleaning.jpg",
+    image: "/images/categories/instant.webp",
     items: ["Fries","Burger Patty","Instant Mix","Cake & Brownies",""]
   },
 ];
