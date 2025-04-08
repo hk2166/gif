@@ -1,31 +1,32 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import Image from 'next/image';
 
 const initiatives = [
   {
     id: 1,
     title: "Zero Waste Packaging",
     description: "Our commitment to reducing packaging waste through eco-friendly alternatives and recycling programs.",
-    image: "/sustainability/zero-waste.jpg",
+    image: "/images/categories/packaging.jpg",
   },
   {
     id: 2,
     title: "Local Sourcing",
     description: "Supporting local farmers and reducing carbon footprint by sourcing products from nearby communities.",
-    image: "/sustainability/local-sourcing.jpg",
+    image: "/images/categories/local-sourcing.jpg",
   },
   {
     id: 3,
     title: "Energy Efficiency",
     description: "Implementing renewable energy solutions and optimizing our operations for minimal environmental impact.",
-    image: "/sustainability/energy.jpg",
+    image: "/images/categories/kitchen-equipment.jpg",
   },
   {
     id: 4,
     title: "Food Waste Reduction",
     description: "Smart inventory management and partnerships with food banks to minimize waste and help communities.",
-    image: "/sustainability/food-waste.jpg",
+    image: "/images/categories/frozen-food.jpg",
   }
 ];
 

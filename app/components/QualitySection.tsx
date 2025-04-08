@@ -83,39 +83,46 @@ export default function QualitySection() {
           >
             <div className="absolute inset-0 bg-gradient-to-r from-primary-100 dark:from-primary-900 to-primary-200 dark:to-primary-800" />
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center p-8">
-                <motion.div
-                  initial={{ scale: 0, rotate: -180 }}
-                  whileInView={{ scale: 1, rotate: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ 
-                    type: "spring",
-                    stiffness: 260,
-                    damping: 20,
-                    delay: 0.3
-                  }}
-                  className="w-24 h-24 mx-auto mb-6 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center"
-                >
-                  <FiShield className="w-12 h-12 text-primary-600 dark:text-primary-400" />
-                </motion.div>
-                <motion.h4
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: 0.5 }}
-                  className="text-2xl font-bold mb-4 text-gray-900 dark:text-white"
-                >
-                  Quality Certified
-                </motion.h4>
-                <motion.p
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: 0.6 }}
-                  className="text-gray-600 dark:text-gray-300"
-                >
-                  Our quality management system is certified by international standards, ensuring consistent quality in every delivery.
-                </motion.p>
+              <img 
+                src="/images/categories/fruits-vegetables.jpg"
+                alt="Quality Products"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+                <div className="text-center p-8">
+                  <motion.div
+                    initial={{ scale: 0, rotate: -180 }}
+                    whileInView={{ scale: 1, rotate: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ 
+                      type: "spring",
+                      stiffness: 260,
+                      damping: 20,
+                      delay: 0.3
+                    }}
+                    className="w-24 h-24 mx-auto mb-6 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center"
+                  >
+                    <FiShield className="w-12 h-12 text-primary-600 dark:text-primary-400" />
+                  </motion.div>
+                  <motion.h4
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.5 }}
+                    className="text-2xl font-bold mb-4 text-white"
+                  >
+                    Quality Certified
+                  </motion.h4>
+                  <motion.p
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.6 }}
+                    className="text-white"
+                  >
+                    Our quality management system is certified by international standards, ensuring consistent quality in every delivery.
+                  </motion.p>
+                </div>
               </div>
             </div>
           </motion.div>

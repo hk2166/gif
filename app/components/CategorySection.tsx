@@ -8,13 +8,13 @@ const categories = [
   {
     title: "Fruits & Vegetables",
     description: "Farm-fresh vegetables, fruits, and herbs",
-    image: "/fresh-produce.jpg",
+    image: "/images/categories/fruits-vegetables.jpg",
     items: ["Vegetables", "Fruits", "Herbs", "Microgreens"]
   },
   {
     title: "Masala,Salt & Sugar",
     description: "Premium quality Masale",
-    image: "/images/categories/meat-seafood.jpg",
+    image: "/images/categories/spices.jpg",
     items: ["Chilli,Turmeric,Coriender Powder", "Grounded Spices", "Whole Spices", "Salt & Sugar","Mouth Freshner & Papad"]
   },
   {
@@ -32,7 +32,7 @@ const categories = [
   {
     title: "Kitchen Equipment",
     description: "Professional kitchen tools and equipment",
-    image: "/images/categories/equipment.jpg",
+    image: "/images/categories/kitchen-equipment.jpg",
     items: ["Utensils", "Appliances", "Tools", "Storage"]
   },
   {
@@ -44,61 +44,61 @@ const categories = [
   {
     title: "Sauces & Seasoning",
     description: "Premium quality Sauces",
-    image: "/images/categories/meat-seafood.jpg",
+    image: "/images/categories/sauces.jpg",
     items: ["Mayonnaise,Dips & Dressing","Ketchup,Puree & Paste","Vineger,Soya & Chilli Sauces","MSG,Flavors & Essence","Oregeno,Chilli Flakes &Seasoning","Instant Noodles","Chutney & Pickles"]
   },
   {
     title: "Canned & Imported Items",
     description: "Grade-A canned and imported goods",
-    image: "/images/categories/cleaning.jpg",
+    image: "/images/categories/canned-imported.jpg",
     items: ["Olives,Jallepinos","Pasta & Noodles","Italian & European","Coconut Milk Powder & Cream","Imported Bakery & Chesse"]
   },
   {
     title: "Edible Oils",
     description: "Best quality Edible Oils",
-    image: "/images/categories/cleaning.jpg",
+    image: "/images/categories/oils.jpg",
     items: ["Sunflower Oil","Soyabean Oil","Mustard Oil","Vanaspati","Palm Oil","Cottonseed Oil"]
   },
   {
     title: "Frozen & Instant Food",
     description: "Grade - A Frozen & Instant Food",
-    image: "/images/categories/cleaning.jpg",
+    image: "/images/categories/frozen-food.jpg",
     items: ["Fries","Burger Patty","Instant Mix","Cake & Brownies",""]
   },
   {
     title: "Pulses",
     description: "Grade - A Pulses",
-    image: "/images/categories/cleaning.jpg",
+    image: "/images/categories/pulses.jpg",
     items: ["Dal","Rajma & Kabuli","Millets & Seeds"]
   },
   {
     title: "Bakery & Chocalates",
     description: "Best Bakery & Chocalates",
-    image: "/images/categories/cleaning.jpg",
+    image: "/images/categories/bakery.jpg",
     items: ["Honey,Spreads & Snacks","Chocalates & Compounds","Cake toppings & Decorations","Essence & Food color","Cake Premix","Bakery Ingredients","Bread & Buns"]
   },
   {
     title: "Beverages & Mixers",
     description: "All in One",
-    image: "/images/categories/cleaning.jpg",
+    image: "/images/categories/beverages.jpg",
     items: ["Juices & Bar Mix","Cold Drinks","Tea & Coffee","Syrups & Crushers","Energy & Flavoured Drinks"]
   },
   {
     title: "Flour",
     description: "Grade - A Flour",
-    image: "/images/categories/cleaning.jpg",
+    image: "/images/categories/flour.jpg",
     items: ["Atta,Maida & Sooji","Corn Flour & Besan & Others"]
   },
   {
     title: "Rice & Rice Products",
     description: "Grade - A Rice & Rice Products",  
-    image: "/images/categories/cleaning.jpg",
+    image: "/images/categories/rice.jpg",
     items: ["Basmati & Biryani Rice","Poha,Idli & Others","Staff Rice","Sona Masori & Kolam Rice","Indrayani Rice","Thali,Table Rice"]
   },
   {
     title: "Dry Fruits & Nuts",
     description: "Grade - A Dry Fruits & Nuts",
-    image: "/images/categories/cleaning.jpg",
+    image: "/images/categories/dry-fruits.webp",
     items: ["Cashews","Peanuts & Others","Almonds,Risens & Pista","Magaj"]
   },
   {
@@ -136,10 +136,16 @@ export default function CategorySection() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group bg-white dark:bg-gray-800 rounded-2xl shadow-lg dark:shadow-gray-800/50 overflow-hidden border border-gray-100 dark:border-gray-700"
             >
-              <div className="aspect-w-16 aspect-h-9 relative bg-gray-100 dark:bg-gray-700">
-                <div className="w-full h-48 relative">
-                  <div className="absolute inset-0 bg-gray-200 dark:bg-gray-600 animate-pulse" />
-                  {/* Placeholder for actual images */}
+              <div className="relative bg-gray-100 dark:bg-gray-700 overflow-hidden">
+                <div className="relative h-48 w-full">
+                  <Image
+                    src={category.image}
+                    alt={category.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    priority={index < 3}
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                   <div className="absolute bottom-4 left-4 text-white">
                     <h3 className="text-xl font-bold">{category.title}</h3>

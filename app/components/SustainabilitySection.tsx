@@ -33,25 +33,25 @@ const carouselSlides = [
     id: 1,
     title: "Zero Waste Packaging",
     description: "Our commitment to reducing packaging waste through eco-friendly alternatives and recycling programs.",
-    image: "/zero-waste-packaging.jpg",
+    image: "/images/categories/zero-waste-packaging.jpg",
   },
   {
     id: 2,
     title: "Local Sourcing",
     description: "Supporting local farmers and reducing carbon footprint by sourcing products from nearby communities.",
-    image: "/local-sourcing.jpg",
+    image: "/images/categories/fruits-vegetables.jpg",
   },
   {
     id: 3,
     title: "Energy Efficiency",
     description: "Implementing renewable energy solutions and optimizing our operations for minimal environmental impact.",
-    image: "/energy.jpg",
+    image: "/images/categories/energy.jpg",
   },
   {
     id: 4,
     title: "Food Waste Reduction",
     description: "Smart inventory management and partnerships with food banks to minimize waste and help communities.",
-    image: "/food-waste.jpg",
+    image: "/images/categories/food-waste.jpg",
   }
 ];
 

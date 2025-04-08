@@ -18,10 +18,10 @@ const staggerContainer = {
 
 // Add your image paths here
 const categories = [
-  { name: "Fresh Produce", image: "/fresh-produce.jpg" }, // Add your image URL later
-  { name: "Kitchen Equipment", image: "Kitchen-Equipment.jpg" },
-  { name: "Packaging", image: "packaging.jpg" },
-  { name: "Cleaning Supplies", image: "cleaning.jpg" }
+  { name: "Fresh Produce", image: "/images/categories/fruits-vegetables.jpg" }, // Add your image URL later
+  { name: "Kitchen Equipment", image: "/images/categories/kitchen-equipment.jpg"},
+  { name: "Packaging", image: "/images/categories/packaging.jpg" },
+  { name: "Cleaning Supplies", image: "/images/categories/cleaning.jpg" }
 ];
 
 export default function HeroSection() {
